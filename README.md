@@ -105,3 +105,4 @@ Para despliegue real fija una clave persistente, `DJANGO_DEBUG=0` y `DJANGO_ALLO
 
 Consigna: Proyecto Módulo #6 ABP proporcionado en PDF.
 Documentación: https://docs.djangoproject.com/en/5.2/ y https://docs.djangoproject.com/en/5.2/topics/auth/default/
+"# Proyecto-6-Django" 
