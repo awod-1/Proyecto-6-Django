@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<section class="panel"><h1>Confirmar eliminación</h1><p>¿Quieres eliminar «{{ object }}»?</p>{% if object.tareas %}<p>También se eliminarán sus tareas.</p>{% endif %}<form method="post">{% csrf_token %}<button class="peligro">Eliminar</button> <a href="{% url 'proyectos' %}">Cancelar</a></form></section>{% endblock %}

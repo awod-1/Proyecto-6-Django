@@ -1,0 +1,8 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Gestión de proyectos</title><link rel="stylesheet" href="{% static 'estilos.css' %}"></head>
+<body><header><a class="marca" href="{% url 'proyectos' %}">Mis proyectos</a><nav>
+{% if user.is_authenticated %}<span>{{ user.username }}</span>{% if user.is_staff %}<a href="{% url 'admin:index' %}">Administración</a>{% endif %}<form method="post" action="{% url 'logout' %}">{% csrf_token %}<button>Salir</button></form>
+{% else %}<a href="{% url 'login' %}">Ingresar</a><a href="{% url 'registro' %}">Registrarme</a>{% endif %}
+</nav></header><main>{% for message in messages %}<p class="aviso">{{ message }}</p>{% endfor %}{% block content %}{% endblock %}</main></body></html>
