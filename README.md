@@ -101,8 +101,4 @@ La configuración predeterminada es para desarrollo local. SQLite guarda los dat
 
 Para despliegue real fija una clave persistente, `DJANGO_DEBUG=0` y `DJANGO_ALLOWED_HOSTS` con los dominios separados por comas. El modo sin DEBUG exige HTTPS y cookies seguras. Configura además un servidor WSGI/ASGI y el servicio de archivos estáticos; runserver se usa exclusivamente para desarrollo. No se incluyen un despliegue productivo ni un video grabado.
 
-## Fuentes
 
-Consigna: Proyecto Módulo #6 ABP proporcionado en PDF.
-Documentación: https://docs.djangoproject.com/en/5.2/ y https://docs.djangoproject.com/en/5.2/topics/auth/default/
-"# Proyecto-6-Django" 
